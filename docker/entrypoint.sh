@@ -2,7 +2,6 @@
 set -e
 
 python manage.py migrate --noinput
-python manage.py collectstatic --noinput
 
 if [ "$#" -gt 0 ]; then
   exec "$@"
